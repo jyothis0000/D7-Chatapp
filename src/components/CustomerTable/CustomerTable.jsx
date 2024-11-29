@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./CustomerTable.css";
-import { NavLink } from "react-router-dom";
 
 const customersData = [
   {
