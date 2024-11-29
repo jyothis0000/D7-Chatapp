@@ -51,7 +51,6 @@ const CustomerTable = () => {
   const [selectedStatus, setSelectedStatus] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState("");
 
-  // Filter customers based on selected criteria
   const filteredCustomers = customersData.filter((customer) => {
     const matchesSearchQuery =
       customer.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -70,7 +69,6 @@ const CustomerTable = () => {
 
   return (
     <div>
-      {/* Filter Section */}
       <div className="filter-section">
         <input
           type="text"
@@ -86,7 +84,6 @@ const CustomerTable = () => {
           <option value="">Category</option>
           <option value="Authentication">Authentication</option>
           <option value="Marketing">Marketing</option>
-          {/* Add more categories */}
         </select>
 
         <select
@@ -96,7 +93,6 @@ const CustomerTable = () => {
           <option value="">Language</option>
           <option value="English">English</option>
           <option value="Spanish">Spanish</option>
-          {/* Add more languages */}
         </select>
 
         <select
@@ -109,7 +105,6 @@ const CustomerTable = () => {
         </select>
       </div>
 
-      {/* Customer Table */}
       <table className="customer-table">
         <thead>
           <tr>
