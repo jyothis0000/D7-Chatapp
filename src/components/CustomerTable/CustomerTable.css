@@ -38,3 +38,13 @@
   display: flex;
   gap: 20px;
 }
+
+.active-status {
+  color: green;
+  font-weight: bold;
+}
+
+.inactive-status {
+  color: red;
+  font-weight: bold;
+}

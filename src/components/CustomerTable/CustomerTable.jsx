@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const customersData = [
   {
     id: 1,
-    name: "John",
+    name: "John Doe",
     email: "john@example.com",
     category: "Authentication",
     status: "Active",
@@ -13,8 +13,8 @@ const customersData = [
   },
   {
     id: 2,
-    name: "James",
-    email: "james@example.com",
+    name: "Joy",
+    email: "joy@example.com",
     category: "Marketing",
     status: "Inactive",
     language: "Spanish",
@@ -25,12 +25,12 @@ const customersData = [
     email: "jack@example.com",
     category: "Authentication",
     status: "Active",
-    language: "Spanish",
+    language: "English",
   },
   {
     id: 4,
-    name: "Jesse",
-    email: "jesse@example.com",
+    name: "Jerry",
+    email: "jerry@example.com",
     category: "Authentication",
     status: "Active",
     language: "Spanish",
@@ -41,7 +41,7 @@ const customersData = [
     email: "julie@example.com",
     category: "Marketing",
     status: "Inactive",
-    language: "Spanish",
+    language: "English",
   },
 ];
 
@@ -127,7 +127,15 @@ const CustomerTable = () => {
               <td>{customer.email}</td>
               <td>{customer.category}</td>
               <td>{customer.language}</td>
-              <td>{customer.status}</td>
+              <td
+                className={
+                  customer.status === "Active"
+                    ? "active-status"
+                    : "inactive-status"
+                }
+              >
+                {customer.status}
+              </td>
             </tr>
           ))}
         </tbody>
