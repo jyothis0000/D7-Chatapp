@@ -5,7 +5,7 @@ import "./Sidebar.css";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h2>Admin Panel</h2>
+      <h2>D7 Admin Panel</h2>
       <nav>
         <ul>
           <li>

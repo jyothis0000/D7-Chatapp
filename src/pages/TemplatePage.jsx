@@ -9,7 +9,6 @@ const TemplatePage = () => {
 
   return (
     <div className="template-page">
-      {/* Tabs for Create and Edit */}
       <div className="tabs">
         <button
           className={`tab-button ${activeTab === "create" ? "active" : ""}`}
@@ -26,11 +25,9 @@ const TemplatePage = () => {
       </div>
 
       <div className="tab-content">
-        {/* Render the active tab */}
         {activeTab === "create" ? <CreateTemplate /> : <EditTemplate />}
       </div>
 
-      {/* Message demo on the right */}
       <div className="message-demo">
         <MessageDemo />
       </div>

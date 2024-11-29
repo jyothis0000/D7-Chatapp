@@ -1,0 +1,85 @@
+.edit-template {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.form-container {
+  width: 48%;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.char-count {
+  font-size: 12px;
+  color: #888;
+}
+
+.content label {
+  font-weight: bold;
+}
+
+.update-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+}
+
+.preview-container {
+  width: 48%;
+  border-left: 2px solid #ddd;
+  padding-left: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.message-preview {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.whatsapp-message {
+  background-color: #e1ffc7;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.header-preview {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.body-preview {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.footer-preview {
+  font-size: 12px;
+  color: #888;
+}

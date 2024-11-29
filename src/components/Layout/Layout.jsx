@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import "./Layout.css"; // Additional layout-specific styles
+import "./Layout.css";
 
 const Layout = ({ children }) => {
   return (
